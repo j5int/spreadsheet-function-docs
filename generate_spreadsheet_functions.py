@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+"""This is a utility that downloads source code and produces a JSON file with the documentation for spreadsheet functions from that source code"""
+
 import json
 import logging
 import os
@@ -33,6 +35,7 @@ SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(SCRIPTS_DIR, '_cache')
 
 def download_src_files():
+    """Downloads defined source files if they're not already downloaded"""
     files = {}
     logging.info("Obtaining %s files", SRC_NAME)
     for filename in SRC_FILES[SRC_NAME]:
@@ -55,6 +58,7 @@ def download_src_files():
 BLOCK_COMMENT = re.compile('/[*].*[*]/', re.DOTALL)
 
 def parse_src_files(src_files):
+    """Parses all source files defined"""
     parsed = {}
     parsed['scfuncs'] = parse_scfuncs(src_files['scfuncs.src'])
     parsed['core_resource'] = parse_core_resource(src_files['core_resource.src'])
@@ -120,6 +124,7 @@ def parse_scfuncs(src):
 
 
 def generate_function_reference(parsed):
+    """Takes the parsed contents of the source files and returns a function reference structure"""
     PARAMETER_DESC = re.compile('(.*) of Parameter ([0-9]*)')
     core_parsed = parsed['core_resource']
     name_lookup = {}
