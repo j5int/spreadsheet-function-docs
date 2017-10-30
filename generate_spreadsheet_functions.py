@@ -42,6 +42,11 @@ SRC_URLS = {
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(SCRIPTS_DIR, '_cache')
 
+def get_package_info():
+    """Returns the information about this package stored in package.json"""
+    with open(os.path.join(SCRIPTS_DIR, 'package.json'), 'rb') as f:
+        return json.load(f)
+
 def download_src_files():
     """Downloads defined source files if they're not already downloaded"""
     files = {}
@@ -168,7 +173,8 @@ def generate_function_reference(parsed):
                 function_def[string_description] = text
         num_params = max([-1] + param_lookup.keys())
         function_def['Parameters'] = [param_lookup.get(param_number, {}) for param_number in range(0, num_params+1)]
-    return [scfuncs_parsed['license'], function_defs]
+    version = get_package_info()['version']
+    return {'LICENSE': scfuncs_parsed['license'], 'VERSION': version, 'functions': function_defs}
 
 
 if __name__ == '__main__':
