@@ -1,0 +1,3857 @@
+[
+    "Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License.  You may obtain a copy of the License at    http://www.apache.org/licenses/LICENSE-2.0  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.", 
+    {
+        "ABS": {
+            "Description": "Absolute value of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The number whose absolute value is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ACOS": {
+            "Description": "Returns the arccosine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value between -1 and 1 for which the arccosine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ACOSH": {
+            "Description": "Returns the inverse hyperbolic cosine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value greater than or equal to 1 for which the hyperbolic cosine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ACOT": {
+            "Description": "Returns the inverse cotangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the inverse cotangent is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ACOTH": {
+            "Description": "Returns the inverse hyperbolic cotangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value smaller than -1 or greater than 1 for which the inverse hyperbolic cotangent is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ADDRESS": {
+            "Description": "Returns the reference to a cell as text.", 
+            "Parameters": [
+                {
+                    "Description": "The row number of the cell.", 
+                    "Name": "row"
+                }, 
+                {
+                    "Description": "The column number of the cell.", 
+                    "Name": "column"
+                }, 
+                {
+                    "Description": "Specifies whether absolute or relative referencing is to be used.", 
+                    "Name": "ABS"
+                }, 
+                {
+                    "Description": "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style.", 
+                    "Name": "A1"
+                }, 
+                {
+                    "Description": "The spreadsheet name of the cell reference.", 
+                    "Name": "sheet"
+                }
+            ]
+        }, 
+        "AND": {
+            "Description": "Returns TRUE if all arguments are TRUE.", 
+            "Parameters": [
+                {
+                    "Description": "Logical value 1, logical value 2;...are 1 to 30 conditions to be tested and each returns either TRUE or FALSE.", 
+                    "Name": "Logical value "
+                }
+            ]
+        }, 
+        "ARABIC": {
+            "Description": "Calculates the value of a Roman numeral.", 
+            "Parameters": [
+                {
+                    "Description": "The text that represents a Roman numeral.", 
+                    "Name": "Text"
+                }
+            ]
+        }, 
+        "AREAS": {
+            "Description": "Returns the number of individual ranges that belong to a (multiple) range.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a (multiple) range.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "ASC": {
+            "Description": "Converts full-width ASCII and katakana characters to half-width.", 
+            "Parameters": [
+                {
+                    "Description": "The text to convert.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "ASIN": {
+            "Description": "Returns the arcsine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value between -1 and 1 for which the arcsine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ASINH": {
+            "Description": "Returns the inverse hyperbolic sine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the inverse hyperbolic sine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ATAN": {
+            "Description": "Returns the arctangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the arctangent is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ATAN2": {
+            "Description": "Returns the arctangent for the specified coordinates.", 
+            "Parameters": [
+                {
+                    "Description": "The value for the x coordinate.", 
+                    "Name": "number_x"
+                }, 
+                {
+                    "Description": "The value for the y coordinate.", 
+                    "Name": "number_y"
+                }
+            ]
+        }, 
+        "ATANH": {
+            "Description": "Returns the inverse hyperbolic tangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value between -1 and 1 for which the inverse hyperbolic tangent is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "AVEDEV": {
+            "Description": "Returns the average of the absolute deviations of a sample from the mean.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2;...are 1 to 30 numerical arguments representing a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "AVERAGE": {
+            "Description": "Returns the average of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2;...are 1 to 30 numeric arguments representing a population sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "AVERAGEA": {
+            "Description": "Returns the average value for a sample. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "AVERAGEIF": {
+            "Description": "Averages the arguments that meet the conditions.", 
+            "Parameters": [
+                {
+                    "Description": "The range to be evaluated by the criteria given.", 
+                    "Name": "range"
+                }, 
+                {
+                    "Description": "The cell range in which the search criteria are given.", 
+                    "Name": "criteria"
+                }, 
+                {
+                    "Description": "The range from which the values are to be averaged.", 
+                    "Name": "average_range"
+                }
+            ]
+        }, 
+        "AVERAGEIFS": {
+            "Description": "Averages the value of the cells that meet multiple criteria in multiple ranges.", 
+            "Parameters": [
+                {
+                    "Description": "The range from which the values are to be averaged.", 
+                    "Name": "average_range"
+                }, 
+                {
+                    "Description": "Range 1, range 2,... are the ranges to be evaluated by the criteria given.", 
+                    "Name": "range "
+                }, 
+                {
+                    "Description": "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given.", 
+                    "Name": "criteria "
+                }
+            ]
+        }, 
+        "B": {
+            "Description": "Returns the probability of a trial result using binomial distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The number of trials.", 
+                    "Name": "trials"
+                }, 
+                {
+                    "Description": "The individual probability of a trial result.", 
+                    "Name": "SP"
+                }, 
+                {
+                    "Description": "Lower limit for the number of trials.", 
+                    "Name": "T_1"
+                }, 
+                {
+                    "Description": "Upper limit for the number of trials.", 
+                    "Name": "T_2"
+                }
+            ]
+        }, 
+        "BASE": {
+            "Description": "Converts a positive integer to text from a number system to the base defined.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be converted.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The base number for conversion must be in the range 2 - 36.", 
+                    "Name": "radix"
+                }, 
+                {
+                    "Description": "If the text is shorter than the specified length, zeros are added to the left of the string.", 
+                    "Name": "Minimum length"
+                }
+            ]
+        }, 
+        "BETADIST": {
+            "Description": "Values of the beta distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the beta distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The Alpha parameter of the Beta distribution.", 
+                    "Name": "alpha"
+                }, 
+                {
+                    "Description": "The Beta parameter of the Beta distribution.", 
+                    "Name": "beta"
+                }, 
+                {
+                    "Description": "The starting value for the value interval of the distribution.", 
+                    "Name": "Start"
+                }, 
+                {
+                    "Description": "The final value for the value interval of the distribution.", 
+                    "Name": "End"
+                }, 
+                {
+                    "Description": "0 or FALSE for probability density function, any other value or TRUE or omitted for cumulative distribution function.", 
+                    "Name": "Cumulative"
+                }
+            ]
+        }, 
+        "BETAINV": {
+            "Description": "Values of the inverse beta distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse beta distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The Alpha parameter of the Beta distribution.", 
+                    "Name": "alpha"
+                }, 
+                {
+                    "Description": "The Beta parameter of the Beta distribution.", 
+                    "Name": "beta"
+                }, 
+                {
+                    "Description": "The starting value for the value interval of the distribution.", 
+                    "Name": "Start"
+                }, 
+                {
+                    "Description": "The final value for the value interval of the distribution.", 
+                    "Name": "End"
+                }
+            ]
+        }, 
+        "BINOMDIST": {
+            "Description": "Values of the binomial distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The number of successes in a series of trials.", 
+                    "Name": "X"
+                }, 
+                {
+                    "Description": "The total number of trials.", 
+                    "Name": "trials"
+                }, 
+                {
+                    "Description": "The success probability of a trial.", 
+                    "Name": "SP"
+                }, 
+                {
+                    "Description": "Cumulated. C=0 calculates the individual probability, C=1 the cumulated probability.", 
+                    "Name": "C"
+                }
+            ]
+        }, 
+        "BITAND": {
+            "Description": "Returns the bitwise AND of two integers", 
+            "Parameters": [
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number1"
+                }, 
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number2"
+                }
+            ]
+        }, 
+        "BITLSHIFT": {
+            "Description": "Bitwise left shift of an integer value.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be shifted. Positive integer.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The number of bits the first argument is to be shifted by.", 
+                    "Name": "Shift"
+                }
+            ]
+        }, 
+        "BITOR": {
+            "Description": "Returns the bitwise OR of two integers", 
+            "Parameters": [
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number1"
+                }, 
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number2"
+                }
+            ]
+        }, 
+        "BITRSHIFT": {
+            "Description": "Bitwise right shift of an integer value.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be shifted. Positive integer.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The number of bits the first argument is to be shifted by.", 
+                    "Name": "Shift"
+                }
+            ]
+        }, 
+        "BITXOR": {
+            "Description": "Returns the bitwise XOR of two integers", 
+            "Parameters": [
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number1"
+                }, 
+                {
+                    "Description": "Positive integer less than 2^48.", 
+                    "Name": "Number2"
+                }
+            ]
+        }, 
+        "CEILING": {
+            "Description": "Rounds a number up to the nearest multiple of significance.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded up.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The number to whose multiple the value is rounded.", 
+                    "Name": "Significance"
+                }, 
+                {
+                    "Description": "If given and not equal to zero then rounded up according to amount when a negative number and significance.", 
+                    "Name": "Mode"
+                }
+            ]
+        }, 
+        "CELL": {
+            "Description": "Determines information about address, formatting or contents of a cell.", 
+            "Parameters": [
+                {
+                    "Description": "String that specifies the type of information.", 
+                    "Name": "info_type"
+                }, 
+                {
+                    "Description": "The position of the cell you want to examine.", 
+                    "Name": "Reference"
+                }
+            ]
+        }, 
+        "CHAR": {
+            "Description": "Converts a code number into a character or letter.", 
+            "Parameters": [
+                {
+                    "Description": "The code value for the character.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "CHISQDIST": {
+            "Description": "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the probability density function or cumulative distribution function is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the chi-square distribution.", 
+                    "Name": "Degrees of Freedom"
+                }, 
+                {
+                    "Description": "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.", 
+                    "Name": "Cumulative"
+                }
+            ]
+        }, 
+        "CHISQINV": {
+            "Description": "Values of the inverse of CHISQDIST(x;DegreesOfFreedom;TRUE()).", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse of the chi square distribution is to be calculated.", 
+                    "Name": "Probability"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the chi square distribution.", 
+                    "Name": "Degrees of Freedom"
+                }
+            ]
+        }, 
+        "CHOOSE": {
+            "Description": "Selects a value from a list of up to 30 value arguments.", 
+            "Parameters": [
+                {
+                    "Description": "The index of the value (1..30) selected.", 
+                    "Name": "Index"
+                }, 
+                {
+                    "Description": "Value 1, value 2,... The list of arguments from which a value is chosen.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "CLEAN": {
+            "Description": "Removes all nonprintable characters from text.", 
+            "Parameters": [
+                {
+                    "Description": "The text from which nonprintable characters are to be removed.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "CODE": {
+            "Description": "Returns a numeric code for the first character in a text string.", 
+            "Parameters": [
+                {
+                    "Description": "This is the text for which the code of the first character is to be found.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "COLUMN": {
+            "Description": "Returns the internal column number of a reference.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a cell or a range.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "COLUMNS": {
+            "Description": "Returns the number of columns in an array or reference.", 
+            "Parameters": [
+                {
+                    "Description": "The array (reference) for which the number of columns is to be determined.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "COM.MICROSOFT.BAHTTEXT": {
+            "Description": "Converts a number to text (Baht).", 
+            "Parameters": [
+                {
+                    "Description": "The number to convert.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "COMBIN": {
+            "Description": "Calculates the number of combinations for elements without repetition.", 
+            "Parameters": [
+                {
+                    "Description": "The total number of elements.", 
+                    "Name": "number_1"
+                }, 
+                {
+                    "Description": "The number of elements selected.", 
+                    "Name": "number_2"
+                }
+            ]
+        }, 
+        "COMBINA": {
+            "Description": "Calculates the number of combinations of elements including repetition.", 
+            "Parameters": [
+                {
+                    "Description": "The total number of elements.", 
+                    "Name": "number_1"
+                }, 
+                {
+                    "Description": "The number of elements selected.", 
+                    "Name": "number_2"
+                }
+            ]
+        }, 
+        "CONCATENATE": {
+            "Description": "Combines several text items into one.", 
+            "Parameters": [
+                {
+                    "Description": "Text for the concatenation.", 
+                    "Name": "text "
+                }
+            ]
+        }, 
+        "CONFIDENCE": {
+            "Description": "Returns a (1 alpha) confidence interval for a normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The level of the confidence interval.", 
+                    "Name": "alpha"
+                }, 
+                {
+                    "Description": "The standard deviation of the population.", 
+                    "Name": "STDEV"
+                }, 
+                {
+                    "Description": "The size of the population.", 
+                    "Name": "size"
+                }
+            ]
+        }, 
+        "CORREL": {
+            "Description": "Returns the correlation coefficient.", 
+            "Parameters": [
+                {
+                    "Description": "The first record array.", 
+                    "Name": "Data_1"
+                }, 
+                {
+                    "Description": "The second record array.", 
+                    "Name": "Data_2"
+                }
+            ]
+        }, 
+        "COS": {
+            "Description": "Returns the cosine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The angle in the radians for which the cosine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "COSH": {
+            "Description": "Returns the hyperbolic cosine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the hyperbolic cosine is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "COT": {
+            "Description": "Returns the cotangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The angle in radians whose cotangent value is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "COTH": {
+            "Description": "Returns the hyperbolic cotangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value not equal to 0 for which the hyperbolic cotangent is to be returned.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "COUNT": {
+            "Description": "Counts how many numbers are in the list of arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1, value 2, ... are 1 to 30 arguments containing different data types but where only numbers are counted.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "COUNTA": {
+            "Description": "Counts how many values are in the list of arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1, value 2, ... are 1 to 30 arguments representing the values to be counted.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "COUNTBLANK": {
+            "Description": "Counts the blank cells in a specified range.", 
+            "Parameters": [
+                {
+                    "Description": "The range in which empty cells are to be counted.", 
+                    "Name": "range"
+                }
+            ]
+        }, 
+        "COUNTIF": {
+            "Description": "Counts the arguments which meet the set conditions.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells on which the criteria are to be applied.", 
+                    "Name": "range"
+                }, 
+                {
+                    "Description": "The cell range in which the search criteria are given.", 
+                    "Name": "criteria"
+                }
+            ]
+        }, 
+        "COUNTIFS": {
+            "Description": "Counts the cells that meet multiple criteria in multiple ranges.", 
+            "Parameters": [
+                {
+                    "Description": "Range 1, range 2,... are the ranges to be evaluated by the criteria given.", 
+                    "Name": "range "
+                }, 
+                {
+                    "Description": "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given.", 
+                    "Name": "criteria "
+                }
+            ]
+        }, 
+        "COVAR": {
+            "Description": "Calculates the covariance.", 
+            "Parameters": [
+                {
+                    "Description": "The first record array.", 
+                    "Name": "Data_1"
+                }, 
+                {
+                    "Description": "The second record array.", 
+                    "Name": "Data_2"
+                }
+            ]
+        }, 
+        "CRITBINOM": {
+            "Description": "Border arguments of the binomial distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The total number of trials.", 
+                    "Name": "trials"
+                }, 
+                {
+                    "Description": "The success probability of a trial.", 
+                    "Name": "SP"
+                }, 
+                {
+                    "Description": "The border probability that is attained or exceeded.", 
+                    "Name": "alpha"
+                }
+            ]
+        }, 
+        "CSC": {
+            "Description": "Return the cosecant of an angle. CSC(x)=1/SIN(x)", 
+            "Parameters": [
+                {
+                    "Description": "The angle in radians for which the cosecant is to be calculated.", 
+                    "Name": "Angle"
+                }
+            ]
+        }, 
+        "CSCH": {
+            "Description": "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)", 
+            "Parameters": [
+                {
+                    "Description": "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated.", 
+                    "Name": "Angle"
+                }
+            ]
+        }, 
+        "CUMIPMT": {
+            "Description": "Cumulative compounded interest. Calculates the total amount of the interest share in a period for an investment with a constant interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "The present value. The present value or the amount the annuity is currently worth.", 
+                    "Name": "pv"
+                }, 
+                {
+                    "Description": "The start period. The first period to be taken into account. A = 1 denotes the very first period.", 
+                    "Name": "S"
+                }, 
+                {
+                    "Description": "The end period. The last period to be taken into account.", 
+                    "Name": "E"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "CUMPRINC": {
+            "Description": "Cumulative Capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "The present value. The present value or the amount the annuity is currently worth.", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "The start period. The first period to be taken into account. A = 1 denotes the very first period.", 
+                    "Name": "S"
+                }, 
+                {
+                    "Description": "End period. The last period to be taken into account.", 
+                    "Name": "E"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "DATE": {
+            "Description": "Provides an internal number for the date given.", 
+            "Parameters": [
+                {
+                    "Description": "An integer between 1583 and 9956 or 0 and 99 (19xx or 20xx depending on the defined option).", 
+                    "Name": "year"
+                }, 
+                {
+                    "Description": "An integer between 1 and 12 representing the month.", 
+                    "Name": "month"
+                }, 
+                {
+                    "Description": "An integer between 1 and 31 representing the day of the month.", 
+                    "Name": "day"
+                }
+            ]
+        }, 
+        "DATEVALUE": {
+            "Description": "Returns an internal number for a text having a possible date format.", 
+            "Parameters": [
+                {
+                    "Description": "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "DAVERAGE": {
+            "Description": "Returns the average value of all the cells of a data range whose contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DAY": {
+            "Description": "Returns the sequential date of the month as an integer (1-31) in relation to the date value.", 
+            "Parameters": [
+                {
+                    "Description": "The internal number for the date.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "DAYS": {
+            "Description": "Calculates the number of days between two dates.", 
+            "Parameters": [
+                {
+                    "Description": "The end date for calculating the difference in days.", 
+                    "Name": "Date_2"
+                }, 
+                {
+                    "Description": "The start date for calculating the difference in days.", 
+                    "Name": "Date_1"
+                }
+            ]
+        }, 
+        "DAYS360": {
+            "Description": "Calculates the number of days between two dates based on a 360-day year.", 
+            "Parameters": [
+                {
+                    "Description": "The start date for calculating the difference in days.", 
+                    "Name": "Date_1"
+                }, 
+                {
+                    "Description": "The end date for calculating the difference in days.", 
+                    "Name": "Date_2"
+                }, 
+                {
+                    "Description": "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "DB": {
+            "Description": "Returns the real depreciation of an asset for a specified period using the fixed-declining balance method.", 
+            "Parameters": [
+                {
+                    "Description": "Acquisition costs: The initial cost of the asset.", 
+                    "Name": "Cost"
+                }, 
+                {
+                    "Description": "Salvage: The remaining value of the asset at the end of its life.", 
+                    "Name": "Salvage"
+                }, 
+                {
+                    "Description": "Useful life. The number of periods in the useful life of the asset.", 
+                    "Name": "Life"
+                }, 
+                {
+                    "Description": "Periods: The period for which the depreciation is calculated. The time unit used for period must be the same as that for the useful life.", 
+                    "Name": "Period"
+                }, 
+                {
+                    "Description": "Months: The number of months in the first year of depreciation.", 
+                    "Name": "month"
+                }
+            ]
+        }, 
+        "DCOUNT": {
+            "Description": "Counts the cells of a data range whose contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DCOUNTA": {
+            "Description": "Counts all non-blank cells of a data range where the content corresponds to the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DDB": {
+            "Description": "Calculates the depreciation of an asset for a specific period using the double-declining balance method or declining balance factor.", 
+            "Parameters": [
+                {
+                    "Description": "Acquisition costs. The initial cost of the asset.", 
+                    "Name": "Cost"
+                }, 
+                {
+                    "Description": "Salvage: The remaining value of the asset at the end of its life.", 
+                    "Name": "Salvage"
+                }, 
+                {
+                    "Description": "Useful life. The number of periods in the useful life of the asset.", 
+                    "Name": "Life"
+                }, 
+                {
+                    "Description": "Period. The depreciation period in the same time unit as the average useful life entry.", 
+                    "Name": "Period"
+                }, 
+                {
+                    "Description": "Factor. The factor for balance decline. F = 2 means a double declining balance factor", 
+                    "Name": "Factor"
+                }
+            ]
+        }, 
+        "DDE": {
+            "Description": "Result of a DDE link.", 
+            "Parameters": [
+                {
+                    "Description": "The name of the server application.", 
+                    "Name": "server"
+                }, 
+                {
+                    "Description": "The name of the file.", 
+                    "Name": "File"
+                }, 
+                {
+                    "Description": "The range from which data is to be taken.", 
+                    "Name": "range"
+                }, 
+                {
+                    "Description": "Defines how data is to be converted to numbers.", 
+                    "Name": "mode"
+                }
+            ]
+        }, 
+        "DECIMAL": {
+            "Description": "Converts a text of a specified number system to a positive integer in the base given.", 
+            "Parameters": [
+                {
+                    "Description": "The text to be converted.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The base number for conversion must be in the range 2 - 36.", 
+                    "Name": "radix"
+                }
+            ]
+        }, 
+        "DEGREES": {
+            "Description": "Converts a radian to degrees", 
+            "Parameters": [
+                {
+                    "Description": "The angle in a radian", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "DEVSQ": {
+            "Description": "Returns the sum of squares of deviations from the sample mean value", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "DGET": {
+            "Description": "Defines the contents of the cell of a data range which matches the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DMAX": {
+            "Description": "Returns the maximum value from all of the cells of a data range which correspond to the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DMIN": {
+            "Description": "Returns the minimum of all cells of a data range where the contents correspond to the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DOLLAR": {
+            "Description": "Converts a number to text in currency format.", 
+            "Parameters": [
+                {
+                    "Description": "Value is a number, a reference to a cell containing a number or a formula that results in a number.", 
+                    "Name": "value"
+                }, 
+                {
+                    "Description": "Decimal places. Denotes the number of digits to the right of the decimal point.", 
+                    "Name": "decimals"
+                }
+            ]
+        }, 
+        "DPRODUCT": {
+            "Description": "Multiplies all cells of a data range where the contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DSTDEV": {
+            "Description": "Calculates the standard deviation of all cells in a data range whose contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DSTDEVP": {
+            "Description": "Returns the standard deviation with regards to the population of all cells of a data range matching the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DSUM": {
+            "Description": "Adds all the cells of a data range where the contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DVAR": {
+            "Description": "Determines the variance of all the cells in a data range where the contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "DVARP": {
+            "Description": "Determines variance of a population based on all cells in a data range where contents match the search criteria.", 
+            "Parameters": [
+                {
+                    "Description": "The range of cells containing data.", 
+                    "Name": "Database"
+                }, 
+                {
+                    "Description": "Indicates which database field (column) is to be used for the search criteria.", 
+                    "Name": "Database field"
+                }, 
+                {
+                    "Description": "Defines the cell range containing the search criteria.", 
+                    "Name": "Search criteria"
+                }
+            ]
+        }, 
+        "EASTERSUNDAY": {
+            "Description": "Calculates the date of Easter Sunday in a given year.", 
+            "Parameters": [
+                {
+                    "Description": "An integer between 1583 and 9956, or 0 and 99 (19xx or 20xx depending on the option set).", 
+                    "Name": "year"
+                }
+            ]
+        }, 
+        "EFFECT": {
+            "Description": "Calculates the annual net interest rate for a nominal interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "Nominal Interest", 
+                    "Name": "NOM"
+                }, 
+                {
+                    "Description": "Periods. The number of interest payments per year.", 
+                    "Name": "P"
+                }
+            ]
+        }, 
+        "EUROCONVERT": {
+            "Description": "Converts a value from one to another Euro currency.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be converted.", 
+                    "Name": "value"
+                }, 
+                {
+                    "Description": "ISO 4217 code of the currency from which is converted, case-sensitive.", 
+                    "Name": "from_currency"
+                }, 
+                {
+                    "Description": "ISO 4217 code of the currency into which is converted, case-sensitive.", 
+                    "Name": "to_currency"
+                }, 
+                {
+                    "Description": "If omitted or 0 or FALSE, the result is rounded to the decimals of to_currency. Else the result is not rounded.", 
+                    "Name": "full_precision"
+                }, 
+                {
+                    "Description": "If given and >=3, the intermediate result of a triangular conversion is rounded to that precision. If omitted, the result is not rounded.", 
+                    "Name": "triangulation_precision"
+                }
+            ]
+        }, 
+        "EVEN": {
+            "Description": "Rounds a positive number up and negative number down to the nearest even integer.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded up.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "EXACT": {
+            "Description": "Specifies whether two texts are identical.", 
+            "Parameters": [
+                {
+                    "Description": "The first text to be used for comparing texts.", 
+                    "Name": "text_1"
+                }, 
+                {
+                    "Description": "The second text for comparing texts.", 
+                    "Name": "text_2"
+                }
+            ]
+        }, 
+        "EXP": {
+            "Description": "Calculates the exponent for basis e.", 
+            "Parameters": [
+                {
+                    "Description": "The exponent applied to base e.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "EXPONDIST": {
+            "Description": "Values of the exponential distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value to which the exponential distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The parameters of the exponential distribution.", 
+                    "Name": "lambda"
+                }, 
+                {
+                    "Description": "Cumulated. C=0 calculates the density function, C=1 the distribution.", 
+                    "Name": "C"
+                }
+            ]
+        }, 
+        "FACT": {
+            "Description": "Calculates the factorial of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The number for which the factorial is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "FALSE": {
+            "Description": "Defines the logical value as FALSE.", 
+            "Parameters": []
+        }, 
+        "FIND": {
+            "Description": "Looks for a string of text within another (case sensitive)", 
+            "Parameters": [
+                {
+                    "Description": "The text to be found.", 
+                    "Name": "find_text"
+                }, 
+                {
+                    "Description": "The text in which a search is to be made.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The position in the text from which the search starts.", 
+                    "Name": "position"
+                }
+            ]
+        }, 
+        "FISHER": {
+            "Description": "Returns the Fisher transformation.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be transformed (-1 < VALUE < 1).", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "FISHERINV": {
+            "Description": "Returns the inverse of the Fisher transformation.", 
+            "Parameters": [
+                {
+                    "Description": "The value that is to be transformed back.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "FIXED": {
+            "Description": "Formats a number with a fixed number of places after the decimal point and thousands separator.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be formatted.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "Decimal places. The number of fixed decimal places that are to be displayed.", 
+                    "Name": "Decimals"
+                }, 
+                {
+                    "Description": "No thousands separator. True value, if existing and TRUE (unequal to 0), no thousands separators are set.", 
+                    "Name": "No thousands separators"
+                }
+            ]
+        }, 
+        "FLOOR": {
+            "Description": "Rounds number down to the nearest multiple of significance.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded down.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The number to whose multiple the value is to be rounded down.", 
+                    "Name": "Significance"
+                }, 
+                {
+                    "Description": "If given and not equal to zero then rounded down according to amount when a negative number and significance.", 
+                    "Name": "Mode"
+                }
+            ]
+        }, 
+        "FORECAST": {
+            "Description": "Returns a value along a linear regression", 
+            "Parameters": [
+                {
+                    "Description": "The X value for which the Y value on the regression linear is to be calculated.", 
+                    "Name": "value"
+                }, 
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }
+            ]
+        }, 
+        "FORMULA": {
+            "Description": "Returns the formula of a formula cell.", 
+            "Parameters": [
+                {
+                    "Description": "The formula cell.", 
+                    "Name": "Reference"
+                }
+            ]
+        }, 
+        "FREQUENCY": {
+            "Description": "Returns a frequency distribution as a vertical array.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The array for forming classes.", 
+                    "Name": "classes"
+                }
+            ]
+        }, 
+        "FTEST": {
+            "Description": "Calculates the F test.", 
+            "Parameters": [
+                {
+                    "Description": "The first record array.", 
+                    "Name": "data_1"
+                }, 
+                {
+                    "Description": "The second record array.", 
+                    "Name": "data_2"
+                }
+            ]
+        }, 
+        "FV": {
+            "Description": "Future value. Returns the future value of an investment based on regular payments and a constant interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "Regular payments. The constant annuity to be paid in each period.", 
+                    "Name": "PMT"
+                }, 
+                {
+                    "Description": "Present value. The current value of a series of payments", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "GAMMA": {
+            "Description": "Returns the value of the Gamma function.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the Gamma function is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "GAMMADIST": {
+            "Description": "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the gamma distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The Alpha parameter of the Gamma distribution.", 
+                    "Name": "alpha"
+                }, 
+                {
+                    "Description": "The Beta parameter of the Gamma distribution.", 
+                    "Name": "beta"
+                }, 
+                {
+                    "Description": "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.", 
+                    "Name": "Cumulative"
+                }
+            ]
+        }, 
+        "GAMMAINV": {
+            "Description": "Values of the inverse gamma distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse gamma distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The Alpha (shape) parameter of the Gamma distribution.", 
+                    "Name": "alpha"
+                }, 
+                {
+                    "Description": "The Beta (scale) parameter of the Gamma distribution.", 
+                    "Name": "beta"
+                }
+            ]
+        }, 
+        "GAMMALN": {
+            "Description": "Returns the natural logarithm of the gamma function.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the natural logarithm of the gamma function is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "GAUSS": {
+            "Description": "Returns the integral values of the standard normal cumulative distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the integral value of the standard normal distribution is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "GCD": {
+            "Description": "Greatest Common Divisor", 
+            "Parameters": [
+                {
+                    "Description": "Integer 1; integer 2,... are integers for which the greatest common divisor is to be calculated.", 
+                    "Name": "Integer "
+                }
+            ]
+        }, 
+        "GEOMEAN": {
+            "Description": "Returns the geometric mean of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "GETPIVOTDATA": {
+            "Description": "Extracts value(s) from a pivot table.", 
+            "Parameters": [
+                {
+                    "Description": "The name of the pivot table field to extract.", 
+                    "Name": "Data Field"
+                }, 
+                {
+                    "Description": "A reference to a cell or range in the pivot table.", 
+                    "Name": "Pivot Table"
+                }, 
+                {
+                    "Description": "Field name/value pair to filter the target data.", 
+                    "Name": "Field Name / Item"
+                }
+            ]
+        }, 
+        "GROWTH": {
+            "Description": "Calculates points on the exponential regression function.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array as the basis for the regression.", 
+                    "Name": "data_X"
+                }, 
+                {
+                    "Description": "The array of X data for recalculating the values.", 
+                    "Name": "new_data_X"
+                }, 
+                {
+                    "Description": "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x.", 
+                    "Name": "Function_type"
+                }
+            ]
+        }, 
+        "HARMEAN": {
+            "Description": "Returns the harmonic mean of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "HLOOKUP": {
+            "Description": "Horizontal search and reference to the cells located below.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be found in the first row.", 
+                    "Name": "search_criteria"
+                }, 
+                {
+                    "Description": "The array or the range for the reference.", 
+                    "Name": "array"
+                }, 
+                {
+                    "Description": "The row index in the array.", 
+                    "Name": "Index"
+                }, 
+                {
+                    "Description": "If the value is TRUE or not given, the search row of the array must be sorted in ascending order.", 
+                    "Name": "sorted"
+                }
+            ]
+        }, 
+        "HOUR": {
+            "Description": "Determines the sequential number of the hour of the day (0-23) for the time value.", 
+            "Parameters": [
+                {
+                    "Description": "Internal time value", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "HYPERLINK": {
+            "Description": "Hyperlink.", 
+            "Parameters": [
+                {
+                    "Description": "URL", 
+                    "Name": "URL "
+                }, 
+                {
+                    "Description": "Cell Text", 
+                    "Name": "CellText "
+                }
+            ]
+        }, 
+        "HYPGEOMDIST": {
+            "Description": "Values of the hypergeometric distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The number of successes in the sample.", 
+                    "Name": "X"
+                }, 
+                {
+                    "Description": "The size of the sample.", 
+                    "Name": "n_sample"
+                }, 
+                {
+                    "Description": "The number of successes in the population.", 
+                    "Name": "successes"
+                }, 
+                {
+                    "Description": "The population size.", 
+                    "Name": "n_population"
+                }
+            ]
+        }, 
+        "IF": {
+            "Description": "Specifies a logical test to be performed.", 
+            "Parameters": [
+                {
+                    "Description": "Any value or expression which can be either TRUE or FALSE.", 
+                    "Name": "Test"
+                }, 
+                {
+                    "Description": "The result of the function if the logical test returns a TRUE.", 
+                    "Name": "Then_value"
+                }, 
+                {
+                    "Description": "The result of the function if the logical test returns FALSE.", 
+                    "Name": "Otherwise_value"
+                }
+            ]
+        }, 
+        "INDEX": {
+            "Description": "Returns a reference to a cell from a defined range.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a (multiple) range.", 
+                    "Name": "reference"
+                }, 
+                {
+                    "Description": "The row in the range.", 
+                    "Name": "row"
+                }, 
+                {
+                    "Description": "The column in the range.", 
+                    "Name": "column"
+                }, 
+                {
+                    "Description": "The index of the subrange if referring to a multiple range.", 
+                    "Name": "range"
+                }
+            ]
+        }, 
+        "INDIRECT": {
+            "Description": "Returns the contents of a cell that is referenced in text form.", 
+            "Parameters": [
+                {
+                    "Name": "ref "
+                }, 
+                {
+                    "Description": "The reference style: 0 or FALSE means R1C1 style, any other value or omitted means A1 style.", 
+                    "Name": "A1"
+                }
+            ]
+        }, 
+        "INFO": {
+            "Parameters": []
+        }, 
+        "INT": {
+            "Description": "Rounds a number down to the nearest integer.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded down.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "INTERCEPT": {
+            "Description": "Returns the intercept of the linear regression line and the Y axis.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }
+            ]
+        }, 
+        "IPMT": {
+            "Description": "Compounded interest. Calculates the interest payment on the principal for an investment with regular payments and a constant interest rate for a given period.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one.", 
+                    "Name": "Period"
+                }, 
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "Present value. The current value of a series of payments", 
+                    "Name": "pv"
+                }, 
+                {
+                    "Description": "Future value. The value (end value) to be attained after the final payment.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "IRR": {
+            "Description": "Returns the actuarial rate of interest of an investment excluding costs or profits.", 
+            "Parameters": [
+                {
+                    "Description": "An array or reference to cells whose contents correspond to the payments. ", 
+                    "Name": "Values"
+                }, 
+                {
+                    "Description": "Guess. An estimated value of the rate of return to be used for the iteration calculation.", 
+                    "Name": "Guess"
+                }
+            ]
+        }, 
+        "ISBLANK": {
+            "Description": "Returns TRUE if value refers to an empty cell.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISERR": {
+            "Description": "Returns TRUE if the value is an error value not equal to #N/A.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISERROR": {
+            "Description": "Returns TRUE if the value is an error value.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISEVEN": {
+            "Description": "Returns TRUE if value is an even integer.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISFORMULA": {
+            "Description": "Returns TRUE if the cell is a formula cell.", 
+            "Parameters": [
+                {
+                    "Description": "The cell to be checked.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "ISLOGICAL": {
+            "Description": "Returns TRUE if the value carries a logical number format.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISNA": {
+            "Description": "Returns TRUE if value equals #N/A.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISNONTEXT": {
+            "Description": "Returns TRUE if the value is not text.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISNUMBER": {
+            "Description": "Returns TRUE if value is a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISODD": {
+            "Description": "Returns TRUE if value is an odd integer.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISOWEEKNUM": {
+            "Description": "Calculates the calendar week corresponding to the given date.", 
+            "Parameters": [
+                {
+                    "Description": "The internal number of the date.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "Indicates the first day of the week (1 = Sunday, other values = Monday).", 
+                    "Name": "mode"
+                }
+            ]
+        }, 
+        "ISPMT": {
+            "Description": "Returns the amount of interest for constant amortization rates.", 
+            "Parameters": [
+                {
+                    "Description": "Interest rate for a single amortization rate.", 
+                    "Name": "rate"
+                }, 
+                {
+                    "Description": "Number of amortization periods for the calculation of the interest.", 
+                    "Name": "Period"
+                }, 
+                {
+                    "Description": "Sum total of amortization periods.", 
+                    "Name": "total_periods"
+                }, 
+                {
+                    "Description": "Amount of the investment.", 
+                    "Name": "invest"
+                }
+            ]
+        }, 
+        "ISREF": {
+            "Description": "Returns TRUE if value is a reference.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "ISTEXT": {
+            "Description": "Returns TRUE if value is text.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be tested.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "JIS": {
+            "Description": "Converts half-width ASCII and katakana characters to full-width.", 
+            "Parameters": [
+                {
+                    "Description": "The text to convert.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "KURT": {
+            "Description": "Returns the kurtosis of a distribution.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments, representing a sample of the distribution.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "LARGE": {
+            "Description": "Returns the k-th largest value of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The ranking of the value.", 
+                    "Name": "Rank_c"
+                }
+            ]
+        }, 
+        "LCM": {
+            "Description": "Lowest common multiple", 
+            "Parameters": [
+                {
+                    "Description": "Integer 1; integer 2,... are integers whose smallest common multiple is to be calculated.", 
+                    "Name": "Integer "
+                }
+            ]
+        }, 
+        "LEFT": {
+            "Description": "Returns the first character or characters of a text.", 
+            "Parameters": [
+                {
+                    "Description": "The text where the initial partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The number of characters for the start text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "LEFTB": {
+            "Description": "Returns the first character or characters of a text,with DBCS", 
+            "Parameters": [
+                {
+                    "Description": "The text where the initial partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The number of characters for the start text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "LEGACY.CHIDIST": {
+            "Description": "Returns the right-tail probability of the chi-square distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the chi square distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the chi square distribution.", 
+                    "Name": "degrees_freedom"
+                }
+            ]
+        }, 
+        "LEGACY.CHIINV": {
+            "Description": "Values of the inverse of CHIDIST(x; DegreesOfFreedom).", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse chi square distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the chi square distribution.", 
+                    "Name": "degrees_freedom"
+                }
+            ]
+        }, 
+        "LEGACY.CHITEST": {
+            "Description": "Returns the chi square independence test.", 
+            "Parameters": [
+                {
+                    "Description": "The observed data array.", 
+                    "Name": "Data_B"
+                }, 
+                {
+                    "Description": "The expected data array.", 
+                    "Name": "data_E"
+                }
+            ]
+        }, 
+        "LEGACY.FDIST": {
+            "Description": "Values of the F probability distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the F distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The degrees of freedom in the numerator of the F distribution.", 
+                    "Name": "degrees_freedom_1"
+                }, 
+                {
+                    "Description": "The degrees of freedom in the denominator of the F distribution.", 
+                    "Name": "degrees_freedom_2"
+                }
+            ]
+        }, 
+        "LEGACY.FINV": {
+            "Description": "Values of the inverse F distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse F distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The degrees of freedom in the numerator of the F distribution.", 
+                    "Name": "degrees_freedom_1"
+                }, 
+                {
+                    "Description": "The degrees of freedom in the denominator of the F distribution.", 
+                    "Name": "degrees_freedom_2"
+                }
+            ]
+        }, 
+        "LEGACY.NORMSDIST": {
+            "Description": "The values of the standard normal cumulative distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the standard normal distribution is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "LEGACY.NORMSINV": {
+            "Description": "Values of the inverse standard normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse standard normal distribution is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "LEN": {
+            "Description": "Calculates length of a text string.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which the length is to be determined.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "LENB": {
+            "Description": "Calculates length of a text string, with DBCS", 
+            "Parameters": [
+                {
+                    "Description": "The text in which the length is to be determined.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "LINEST": {
+            "Description": "Calculates parameters of the linear regression as an array.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }, 
+                {
+                    "Description": "If type = 0 the linears will be calculated through the zero point, or else moved linears.", 
+                    "Name": "Linear_type"
+                }, 
+                {
+                    "Description": "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well.", 
+                    "Name": "stats"
+                }
+            ]
+        }, 
+        "LN": {
+            "Description": "Calculates the natural logarithm of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value greater than 0 for which the natural logarithm is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "LOG": {
+            "Description": "Calculates the logarithm to any specified base.", 
+            "Parameters": [
+                {
+                    "Description": "A value greater than 0 for which the logarithm is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The base of the logarithm. If omitted, the base is regarded as 10.", 
+                    "Name": "Base"
+                }
+            ]
+        }, 
+        "LOG10": {
+            "Description": "Calculates the base-10 logarithm of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A value greater than 0 for which the logarithm is to be calculated.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "LOGEST": {
+            "Description": "Calculates the parameters of the exponential regression curve as an array.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }, 
+                {
+                    "Description": "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x.", 
+                    "Name": "Function_type"
+                }, 
+                {
+                    "Description": "If parameter = 0 then only the regression coefficient will be calculated, otherwise other values as well.", 
+                    "Name": "stats"
+                }
+            ]
+        }, 
+        "LOGINV": {
+            "Description": "Values of the inverse of the lognormal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse log normal distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "Mean value. The mean value of the log normal distribution.", 
+                    "Name": "mean"
+                }, 
+                {
+                    "Description": "Standard deviation. The standard deviation of the log normal distribution.", 
+                    "Name": "STDEV"
+                }
+            ]
+        }, 
+        "LOGNORMDIST": {
+            "Description": "Values of the log normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the log normal distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The mean value of the log normal distribution. It is set to 0 if omitted.", 
+                    "Name": "mean"
+                }, 
+                {
+                    "Description": "The standard deviation of the log normal distribution. It is set to 1 if omitted.", 
+                    "Name": "STDEV"
+                }, 
+                {
+                    "Description": "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.", 
+                    "Name": "Cumulative"
+                }
+            ]
+        }, 
+        "LOOKUP": {
+            "Description": "Determines a value in a vector by comparison to values in another vector.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be used for comparison.", 
+                    "Name": "Search criterion"
+                }, 
+                {
+                    "Description": "The vector (row or column) in which to search.", 
+                    "Name": "Search vector"
+                }, 
+                {
+                    "Description": "The vector (row or range) from which the value is to be determined.", 
+                    "Name": "result_vector"
+                }
+            ]
+        }, 
+        "LOWER": {
+            "Description": "Converts text to lowercase.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which capitals are converted to lower case letters.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "MATCH": {
+            "Description": "Defines a position in a array after comparing values.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be used for comparison.", 
+                    "Name": "Search criterion"
+                }, 
+                {
+                    "Description": "The array (range) in which the search is made.", 
+                    "Name": "lookup_array"
+                }, 
+                {
+                    "Description": "Type can take the value 1, 0 or -1 and determines the criteria are to be used for comparison purposes.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "MAX": {
+            "Description": "Returns the maximum value in a list of arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments for which the largest number is to be determined.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "MAXA": {
+            "Description": "Returns the maximum value in a list of arguments. Text is evaluated as Zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1, value 2,    are 1 to 30 arguments whose largest value is to be determined.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "MDETERM": {
+            "Description": "Returns the array determinant.", 
+            "Parameters": [
+                {
+                    "Description": "The array for which the determinant is to be determined.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "MEDIAN": {
+            "Description": "Returns the median of a given sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "MID": {
+            "Description": "Returns a partial text string of a text.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The position from which the part word is to be determined.", 
+                    "Name": "start"
+                }, 
+                {
+                    "Description": "The number of characters for the text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "MIDB": {
+            "Description": "Returns a partial text string of a text, with DBCS", 
+            "Parameters": [
+                {
+                    "Description": "The text in which partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The position from which the part word is to be determined.", 
+                    "Name": "start"
+                }, 
+                {
+                    "Description": "The number of characters for the text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "MIN": {
+            "Description": "Returns the minimum value in a list of arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments for which the smallest number is to be determined.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "MINA": {
+            "Description": "Returns the smallest value in a list of arguments. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2;... are 1 to 30 arguments whose smallest number is to be determined.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "MINUTE": {
+            "Description": "Determines the sequential number for the minute of the hour (0-59) for the time value.", 
+            "Parameters": [
+                {
+                    "Description": "Internal time value.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "MINVERSE": {
+            "Description": "Returns the inverse of an array.", 
+            "Parameters": [
+                {
+                    "Description": "The array to be inverted.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "MIRR": {
+            "Description": "Returns the modified internal rate of return for a series of investments.", 
+            "Parameters": [
+                {
+                    "Description": "An array or reference to cells whose contents correspond to the payments.", 
+                    "Name": "Values"
+                }, 
+                {
+                    "Description": "Interest rate for investments (the negative values in the array).", 
+                    "Name": "investment"
+                }, 
+                {
+                    "Description": "interest rate for reinvestments (the positive values in the array).", 
+                    "Name": "reinvest_rate"
+                }
+            ]
+        }, 
+        "MMULT": {
+            "Description": "Array multiplication. Returns the product of two arrays.", 
+            "Parameters": [
+                {
+                    "Description": "The first array for the array product.", 
+                    "Name": "array"
+                }, 
+                {
+                    "Description": "The second array having the same number of rows as the first array has columns.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "MOD": {
+            "Description": "Calculates the remainder of a division.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be divided.", 
+                    "Name": "Dividend"
+                }, 
+                {
+                    "Description": "The number by which the dividend is divided.", 
+                    "Name": "Divisor"
+                }
+            ]
+        }, 
+        "MODE": {
+            "Description": "Returns the most common value in a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "MONTH": {
+            "Description": "Determines the sequential number of a month of the year (1-12) for the date value.", 
+            "Parameters": [
+                {
+                    "Description": "The internal number of the date.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "MUNIT": {
+            "Description": "Returns the unitary square array of a certain size.", 
+            "Parameters": [
+                {
+                    "Description": "The size of the unitary array.", 
+                    "Name": "Dimensions"
+                }
+            ]
+        }, 
+        "N": {
+            "Description": "Converts a value to a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be interpreted as a number.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "NA": {
+            "Description": "Not available. Returns the error value #N/A.", 
+            "Parameters": []
+        }, 
+        "NEGBINOMDIST": {
+            "Description": "Values of the negative binomial distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The number of failures in the trial range.", 
+                    "Name": "X"
+                }, 
+                {
+                    "Description": "The number of successes in the trial sequence.", 
+                    "Name": "R"
+                }, 
+                {
+                    "Description": "The success probability of a trial.", 
+                    "Name": "SP"
+                }
+            ]
+        }, 
+        "NOMINAL": {
+            "Description": "Calculates the yearly nominal interest rate as an effective interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The effective interest rate", 
+                    "Name": "effect_rate"
+                }, 
+                {
+                    "Description": "Periods. The number of interest payment per year.", 
+                    "Name": "npery"
+                }
+            ]
+        }, 
+        "NORMDIST": {
+            "Description": "Values of the normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the normal distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The mean value. The mean value of the normal distribution.", 
+                    "Name": "Mean"
+                }, 
+                {
+                    "Description": "Standard deviation. The standard deviation of the normal distribution.", 
+                    "Name": "STDEV"
+                }, 
+                {
+                    "Description": "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.", 
+                    "Name": "C"
+                }
+            ]
+        }, 
+        "NORMINV": {
+            "Description": "Values of the inverse normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse normal distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The mean value. The mean value of the normal distribution.", 
+                    "Name": "mean"
+                }, 
+                {
+                    "Description": "Standard deviation. The standard deviation of the normal distribution.", 
+                    "Name": "STDEV"
+                }
+            ]
+        }, 
+        "NOT": {
+            "Description": "Reverses the value of the argument.", 
+            "Parameters": [
+                {
+                    "Description": "An expression that can be either TRUE or FALSE.", 
+                    "Name": "Logical value"
+                }
+            ]
+        }, 
+        "NOW": {
+            "Description": "Determines the current time of the computer.", 
+            "Parameters": []
+        }, 
+        "NPER": {
+            "Description": "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Regular payments. The constant annuity to be paid in each period.", 
+                    "Name": "PMT"
+                }, 
+                {
+                    "Description": "Present value. The current value of a series of payments", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "Future value. The value (end value) to be attained after the final payment.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "NPV": {
+            "Description": "Net present value. Calculates the net present value of an investment based on a series of periodic payments and a discount rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of discount for one period.", 
+                    "Name": "RATE"
+                }, 
+                {
+                    "Description": "Value 1, value 2,... are 1 to 30 arguments representing payments and income.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "NUMBERVALUE": {
+            "Description": "Converts text to a number, in a locale-independent way.", 
+            "Parameters": [
+                {
+                    "Description": "The text to be converted to a number.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "Defines the character used as the decimal point.", 
+                    "Name": "decimal_point"
+                }
+            ]
+        }, 
+        "ODD": {
+            "Description": "Rounds a positive number up and negative number down to the nearest odd integer.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded up.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "OFFSET": {
+            "Description": "Returns a reference which has been moved in relation to the starting point.", 
+            "Parameters": [
+                {
+                    "Description": "The reference (cell) from which to base the movement.", 
+                    "Name": "reference"
+                }, 
+                {
+                    "Description": "The number of rows to be moved either up or down.", 
+                    "Name": "rows"
+                }, 
+                {
+                    "Description": "The number of columns that are to be moved to the left or to the right.", 
+                    "Name": "columns"
+                }, 
+                {
+                    "Description": "The number of rows of the moved reference.", 
+                    "Name": "height"
+                }, 
+                {
+                    "Description": "The number of columns in the moved reference.", 
+                    "Name": "width"
+                }
+            ]
+        }, 
+        "OR": {
+            "Description": "Returns TRUE if an argument is TRUE.", 
+            "Parameters": [
+                {
+                    "Description": "Logical value 1, logical value 2,... are 1 to 30 conditions to be tested and which return either TRUE or FALSE.", 
+                    "Name": "Logical value "
+                }
+            ]
+        }, 
+        "ORG.OPENOFFICE.CONVERT": {
+            "Description": "Converts a value according to a conversion table in the configuration (calc.xcu).", 
+            "Parameters": [
+                {
+                    "Description": "The value to be converted.", 
+                    "Name": "value"
+                }, 
+                {
+                    "Description": "Unit from which something is converted, case-sensitive.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "Unit into which something is converted, case-sensitive.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "ORG.OPENOFFICE.CURRENT": {
+            "Description": "Calculates the current value of the formula at the present location. ", 
+            "Parameters": []
+        }, 
+        "ORG.OPENOFFICE.ERRORTYPE": {
+            "Description": "Returns a number corresponding to an error type", 
+            "Parameters": [
+                {
+                    "Description": "The reference (cell) in which the error occurred.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "ORG.OPENOFFICE.STYLE": {
+            "Description": "Applies a Style to the formula cell.", 
+            "Parameters": [
+                {
+                    "Description": "The name of the Style to be applied.", 
+                    "Name": "Style"
+                }, 
+                {
+                    "Description": "The time (in seconds) that the Style is to remain valid.", 
+                    "Name": "Time"
+                }, 
+                {
+                    "Description": "The Style to be applied after time expires.", 
+                    "Name": "Style2"
+                }
+            ]
+        }, 
+        "PDURATION": {
+            "Description": "Duration. Calculates the number of periods required by an investment to attain the desired value.", 
+            "Parameters": [
+                {
+                    "Description": "The constant rate of interest.", 
+                    "Name": "RATE"
+                }, 
+                {
+                    "Description": "The present value. The current value of the investment.", 
+                    "Name": "pv"
+                }, 
+                {
+                    "Description": "The future value of the investment.", 
+                    "Name": "FV"
+                }
+            ]
+        }, 
+        "PEARSON": {
+            "Description": "Returns the Pearson product moment correlation coefficient.", 
+            "Parameters": [
+                {
+                    "Description": "The first record array.", 
+                    "Name": "Data_1"
+                }, 
+                {
+                    "Description": "The second record array.", 
+                    "Name": "Data_2"
+                }
+            ]
+        }, 
+        "PERCENTILE": {
+            "Description": "Returns the alpha quantile of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The percentage rate of the quantile between 0 and 1.", 
+                    "Name": "Alpha"
+                }
+            ]
+        }, 
+        "PERCENTRANK": {
+            "Description": "Returns the percentage rank of a value in a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The value for which percentage ranking is to be determined.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "PERMUT": {
+            "Description": "Returns the number of permutations for a given number of elements without repetition.", 
+            "Parameters": [
+                {
+                    "Description": "The total number of elements.", 
+                    "Name": "Count_1"
+                }, 
+                {
+                    "Description": "The selection number taken from the elements.", 
+                    "Name": "Count_2"
+                }
+            ]
+        }, 
+        "PERMUTATIONA": {
+            "Description": "Returns the number of permutations for a given number of objects (repetition allowed).", 
+            "Parameters": [
+                {
+                    "Description": "The total number of elements.", 
+                    "Name": "Count_1"
+                }, 
+                {
+                    "Description": "The selection number taken from the elements.", 
+                    "Name": "Count_2"
+                }
+            ]
+        }, 
+        "PHI": {
+            "Description": "Values of the distribution function for a standard normal distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the standard normal distribution is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "PI": {
+            "Description": "Returns the value of the number Pi.", 
+            "Parameters": []
+        }, 
+        "PMT": {
+            "Description": "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "Present value. The current value of a series of payments", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "Future value. The value (end value) to be attained after the final payment.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "POISSON": {
+            "Description": "Returns the Poisson distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the Poisson distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "Mean. The mean value of the Poisson distribution.", 
+                    "Name": "mean"
+                }, 
+                {
+                    "Description": "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function.", 
+                    "Name": "Cumulative"
+                }
+            ]
+        }, 
+        "POWER": {
+            "Description": "Returns a^b, base a raised to the power of exponent b.", 
+            "Parameters": [
+                {
+                    "Description": "The base a of the power a^b.", 
+                    "Name": "Base"
+                }, 
+                {
+                    "Description": "The exponent b of the power a^b.", 
+                    "Name": "Exponent"
+                }
+            ]
+        }, 
+        "PPMT": {
+            "Description": "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant.", 
+            "Parameters": [
+                {
+                    "Description": "The interest rate per period.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last", 
+                    "Name": "Period"
+                }, 
+                {
+                    "Description": "The payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "The present value. The present value or the amount the annuity is currently worth.", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "Future value. The value (end value) attained after the last payment has been made.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "PROB": {
+            "Description": "Returns the discreet probability of an interval.", 
+            "Parameters": [
+                {
+                    "Description": "The sample data array.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The array of the associated probabilities.", 
+                    "Name": "probability"
+                }, 
+                {
+                    "Description": "The start of the value interval whose probabilities is to be totalled.", 
+                    "Name": "Start"
+                }, 
+                {
+                    "Description": "The end of the value interval where the probabilities are to be totalled.", 
+                    "Name": "End"
+                }
+            ]
+        }, 
+        "PRODUCT": {
+            "Description": "Multiplies the arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 arguments to be multiplied and a result returned.", 
+                    "Name": "Number "
+                }
+            ]
+        }, 
+        "PROPER": {
+            "Description": "Capitalizes the first letter in all words.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which the beginning of words are to be replaced by capital letters.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "PV": {
+            "Description": "Present value. Calculates the present value of an investment.", 
+            "Parameters": [
+                {
+                    "Description": "The rate of interest for the period given.", 
+                    "Name": "Rate"
+                }, 
+                {
+                    "Description": "The payment period. The total number of periods in which the annuity is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "Regular payments. The constant amount of annuity that is paid in each period.", 
+                    "Name": "PMT"
+                }, 
+                {
+                    "Description": "Future value. The value (final value) to be attained after the last payment.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "QUARTILE": {
+            "Description": "Returns the quartile of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The type of the quartile (0 = MIN, 1 = 25 %, 2 = 50 %, 3 = 75 %, 4 = MAX).", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "RADIANS": {
+            "Description": "Converts degrees to radians", 
+            "Parameters": [
+                {
+                    "Description": "The angle in degrees.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "RAND": {
+            "Description": "Returns a random number between 0 and 1.", 
+            "Parameters": []
+        }, 
+        "RANK": {
+            "Description": "Returns the ranking of a value in a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the rank is to be determined.", 
+                    "Name": "value"
+                }, 
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "Data"
+                }, 
+                {
+                    "Description": "Sequence order: 0 or omitted means descending, any other value than 0 means ascending.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "RATE": {
+            "Description": "Calculates the constant interest rate of an investment with regular payments.", 
+            "Parameters": [
+                {
+                    "Description": "Payment period. The total number of periods in which the annuity (pension) is paid.", 
+                    "Name": "NPER"
+                }, 
+                {
+                    "Description": "Regular payments. The constant annuity to be paid in each period.", 
+                    "Name": "PMT"
+                }, 
+                {
+                    "Description": "Present value. The current value of a series of payments", 
+                    "Name": "PV"
+                }, 
+                {
+                    "Description": "Future value. The value (end value) to be attained after the final payment.", 
+                    "Name": "FV"
+                }, 
+                {
+                    "Description": "Type = 1 denotes due at the beginning of the period, = 0 at the end.", 
+                    "Name": "Type"
+                }, 
+                {
+                    "Description": "Guess. The estimate of the interest rate for the iterative calculating method.", 
+                    "Name": "Guess"
+                }
+            ]
+        }, 
+        "REPLACE": {
+            "Description": "Replaces characters within a text string with a different text string.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which some characters are to be replaced.", 
+                    "Name": "Text"
+                }, 
+                {
+                    "Description": "The character position from which text is to be replaced.", 
+                    "Name": "position"
+                }, 
+                {
+                    "Description": "The number of characters to be replaced.", 
+                    "Name": "length"
+                }, 
+                {
+                    "Description": "The text to be inserted.", 
+                    "Name": "new text"
+                }
+            ]
+        }, 
+        "REPT": {
+            "Description": "Repeats text a given number of times.", 
+            "Parameters": [
+                {
+                    "Description": "The text to be repeated.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The number of times the text is to be repeated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "RIGHT": {
+            "Description": "Returns the last character or characters of a text.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which the end partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The number of characters for the end text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "RIGHTB": {
+            "Description": "Returns the last character or characters of a text,with DBCS", 
+            "Parameters": [
+                {
+                    "Description": "The text in which the end partial words are to be determined.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The number of characters for the end text.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "ROMAN": {
+            "Description": "Converts a number to a Roman numeral.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be converted to a Roman numeral must be in the 0 - 3999 range.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The more this value increases, the more the Roman numeral is simplified. The value must be in the 0 - 4 range.", 
+                    "Name": "Mode"
+                }
+            ]
+        }, 
+        "ROUND": {
+            "Description": "Rounds a number to a predefined accuracy.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The number of places to which a number is to be rounded.", 
+                    "Name": "count"
+                }
+            ]
+        }, 
+        "ROUNDDOWN": {
+            "Description": "Rounds a number down to a predefined accuracy.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded down.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The number of places down to which a number is to be rounded.", 
+                    "Name": "count"
+                }
+            ]
+        }, 
+        "ROUNDUP": {
+            "Description": "Rounds a number up to the predefined accuracy.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be rounded up.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The number of places to which a number is to be rounded.", 
+                    "Name": "count"
+                }
+            ]
+        }, 
+        "ROW": {
+            "Description": "Defines the internal row number of a reference.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a cell or a range.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "ROWS": {
+            "Description": "Returns the number of rows in a reference or array.", 
+            "Parameters": [
+                {
+                    "Description": "The array (reference) for which the number of rows is to be determined.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "RSQ": {
+            "Description": "Returns the square of the Pearson product moment correlation coefficient.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }
+            ]
+        }, 
+        "SEARCH": {
+            "Description": "Looks for one text value within another (not case-sensitive).", 
+            "Parameters": [
+                {
+                    "Description": "The text to be found.", 
+                    "Name": "find_text"
+                }, 
+                {
+                    "Description": "The text in which a search is to be made.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The position in the text where the search is started.", 
+                    "Name": "position"
+                }
+            ]
+        }, 
+        "SEC": {
+            "Description": "Return the secant of an angle. SEC(x)=1/COS(x)", 
+            "Parameters": [
+                {
+                    "Description": "The angle in radians for which the secant is to be calculated.", 
+                    "Name": "Angle"
+                }
+            ]
+        }, 
+        "SECH": {
+            "Description": "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)", 
+            "Parameters": [
+                {
+                    "Description": "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated.", 
+                    "Name": "Angle"
+                }
+            ]
+        }, 
+        "SECOND": {
+            "Description": "Determines the sequential number of the second of a minute (0-59) for the time value.", 
+            "Parameters": [
+                {
+                    "Description": "The internal time value.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "SHEET": {
+            "Description": "Returns the internal sheet number of a reference or a string.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a cell or a range or the character string of a sheet name.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "SHEETS": {
+            "Description": "Returns the number of sheets of a given reference. If no parameter has been entered, the total number of sheets in the document is returned.", 
+            "Parameters": [
+                {
+                    "Description": "The reference to a cell or a range.", 
+                    "Name": "reference"
+                }
+            ]
+        }, 
+        "SIGN": {
+            "Description": "Returns the algebraic sign of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The number for which the algebraic sign is to be determined.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "SIN": {
+            "Description": "Returns the sine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The angle in radians for which the sine is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "SINH": {
+            "Description": "Returns the hyperbolic sine of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the hyperbolic sine is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "SKEW": {
+            "Description": "Returns the skewness of a distribution.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments portraying a sample of the distribution.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "SLN": {
+            "Description": "Calculates the linear depreciation per period.", 
+            "Parameters": [
+                {
+                    "Description": "Acquisition cost. The initial cost of an asset.", 
+                    "Name": "Cost"
+                }, 
+                {
+                    "Description": "Salvage: The remaining value of the asset at the end of its life.", 
+                    "Name": "Salvage"
+                }, 
+                {
+                    "Description": "Useful life. The number of periods in the useful life of the asset.", 
+                    "Name": "Life"
+                }
+            ]
+        }, 
+        "SLOPE": {
+            "Description": "Returns the slope of the linear regression line.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }
+            ]
+        }, 
+        "SMALL": {
+            "Description": "Returns the k-th smallest value of a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The ranking of the value.", 
+                    "Name": "Rank_c"
+                }
+            ]
+        }, 
+        "SQRT": {
+            "Description": "Returns the square root of a number.", 
+            "Parameters": [
+                {
+                    "Description": "A positive value for which the square root is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "STANDARDIZE": {
+            "Description": "Converts a random variable to a normalized value.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be standardized.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The mean value used for moving.", 
+                    "Name": "mean"
+                }, 
+                {
+                    "Description": "The standard deviation used for scaling.", 
+                    "Name": "STDEV"
+                }
+            ]
+        }, 
+        "STDEV": {
+            "Description": "Calculates the standard deviation based on a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "STDEVA": {
+            "Description": "Returns the standard deviation based on a sample. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "STDEVP": {
+            "Description": "Calculates the standard deviation based on the entire population.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "STDEVPA": {
+            "Description": "Returns the standard deviation based on the entire population. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2;... are 1 to 30 arguments corresponding to a population.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "STEYX": {
+            "Description": "Returns the standard error of the linear regression.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array.", 
+                    "Name": "data_X"
+                }
+            ]
+        }, 
+        "SUBSTITUTE": {
+            "Description": "Substitutes new text for old text in a string.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which partial words are to be replaced.", 
+                    "Name": "text"
+                }, 
+                {
+                    "Description": "The partial string to be (repeatedly) replaced.", 
+                    "Name": "search_text"
+                }, 
+                {
+                    "Description": "The text which is to replace the text string.", 
+                    "Name": "new text"
+                }, 
+                {
+                    "Description": "Which occurrence of the old text is to be replaced.", 
+                    "Name": "occurrence"
+                }
+            ]
+        }, 
+        "SUBTOTAL": {
+            "Description": "Calculates subtotals in a spreadsheet.", 
+            "Parameters": [
+                {
+                    "Description": "Function index. Is an index of the possible functions Total, Max, ...", 
+                    "Name": "Function"
+                }, 
+                {
+                    "Description": "The cells of the range which are to be taken into account.", 
+                    "Name": "range "
+                }
+            ]
+        }, 
+        "SUM": {
+            "Description": "Returns the sum of all arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "SUMIF": {
+            "Description": "Totals the arguments that meet the conditions.", 
+            "Parameters": [
+                {
+                    "Description": "The range to be evaluated by the criteria given.", 
+                    "Name": "range"
+                }, 
+                {
+                    "Description": "The cell range in which the search criteria are given.", 
+                    "Name": "criteria"
+                }, 
+                {
+                    "Description": "The range from which the values are to be totalled.", 
+                    "Name": "sum_range"
+                }
+            ]
+        }, 
+        "SUMIFS": {
+            "Description": "Totals the values of cells in a range that meet multiple criteria in multiple ranges.", 
+            "Parameters": [
+                {
+                    "Description": "The range from which the values are to be totalled.", 
+                    "Name": "sum_range"
+                }, 
+                {
+                    "Description": "Range 1, range 2,... are the ranges to be evaluated by the criteria given.", 
+                    "Name": "range "
+                }, 
+                {
+                    "Description": "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given.", 
+                    "Name": "criteria "
+                }
+            ]
+        }, 
+        "SUMPRODUCT": {
+            "Description": "(Inner products) Returns the sum of the products of array arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Array 1, array 2, ... are up to 30 arrays whose arguments are to be multiplied.", 
+                    "Name": "Array "
+                }
+            ]
+        }, 
+        "SUMSQ": {
+            "Description": "Returns the sum of the squares of the arguments.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "SUMX2MY2": {
+            "Description": "Returns the sum of the difference of squares of two arrays.", 
+            "Parameters": [
+                {
+                    "Description": "First array where the square of the arguments are totalled.", 
+                    "Name": "array_x"
+                }, 
+                {
+                    "Description": "Second array where the square of the arguments is to be subtracted.", 
+                    "Name": "array_y"
+                }
+            ]
+        }, 
+        "SUMX2PY2": {
+            "Description": "Returns the total of the square sum of two arrays.", 
+            "Parameters": [
+                {
+                    "Description": "First array where the square of the arguments are totalled.", 
+                    "Name": "array_x"
+                }, 
+                {
+                    "Description": "Second array where the square of the arguments is to be totalled.", 
+                    "Name": "array_y"
+                }
+            ]
+        }, 
+        "SUMXMY2": {
+            "Description": "Returns the sum of squares of differences of two arrays.", 
+            "Parameters": [
+                {
+                    "Description": "First array for forming argument differences.", 
+                    "Name": "array_x"
+                }, 
+                {
+                    "Description": "Second array for forming the argument differences.", 
+                    "Name": "array_y"
+                }
+            ]
+        }, 
+        "SYD": {
+            "Description": "Calculates the arithmetically declining value of an asset (depreciation) for a specified period.", 
+            "Parameters": [
+                {
+                    "Description": "Acquisition costs. The initial cost of the asset.", 
+                    "Name": "Cost"
+                }, 
+                {
+                    "Description": "Salvage: The remaining value of the asset at the end of its life.", 
+                    "Name": "Salvage"
+                }, 
+                {
+                    "Description": "Useful life. The number of periods in the useful life of the asset.", 
+                    "Name": "Life"
+                }, 
+                {
+                    "Description": "Period. The depreciation period which must have the same time unit as average useful life.", 
+                    "Name": "Period"
+                }
+            ]
+        }, 
+        "T": {
+            "Description": "Returns a value if it is text, otherwise an empty string.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be checked and returned if it is text.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "TAN": {
+            "Description": "Returns the tangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The angle in radians for which the tangent is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "TANH": {
+            "Description": "Returns the hyperbolic tangent of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the hyperbolic tangent is to be calculated.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "TDIST": {
+            "Description": "Returns the t-distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the T distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the T distribution.", 
+                    "Name": "degrees_freedom"
+                }, 
+                {
+                    "Description": "Mode = 1 calculates the one-tailed test, 2 = two-tailed distribution.", 
+                    "Name": "mode"
+                }
+            ]
+        }, 
+        "TEXT": {
+            "Description": "Converts a number to text according to a given format.", 
+            "Parameters": [
+                {
+                    "Description": "The numeric value to be converted.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The text that describes the format.", 
+                    "Name": "Format"
+                }
+            ]
+        }, 
+        "TIME": {
+            "Description": "Determines a time value from the details for hour, minute and second.", 
+            "Parameters": [
+                {
+                    "Description": "The integer for the hour.", 
+                    "Name": "hour"
+                }, 
+                {
+                    "Description": "The integer for the minute.", 
+                    "Name": "minute"
+                }, 
+                {
+                    "Description": "The integer for the second.", 
+                    "Name": "second"
+                }
+            ]
+        }, 
+        "TIMEVALUE": {
+            "Description": "Returns a sequential number for a text shown in a possible time entry format.", 
+            "Parameters": [
+                {
+                    "Description": "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "TINV": {
+            "Description": "Values of the inverse t-distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The probability value for which the inverse T distribution is to be calculated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The degrees of freedom of the T distribution.", 
+                    "Name": "degrees_freedom"
+                }
+            ]
+        }, 
+        "TODAY": {
+            "Description": "Determines the current date of the computer.", 
+            "Parameters": []
+        }, 
+        "TRANSPOSE": {
+            "Description": "Array transposition. Exchanges the rows and columns of an array.", 
+            "Parameters": [
+                {
+                    "Description": "The array in which the rows and columns have been transposed.", 
+                    "Name": "array"
+                }
+            ]
+        }, 
+        "TREND": {
+            "Description": "Calculates points along a regression line.", 
+            "Parameters": [
+                {
+                    "Description": "The Y data array.", 
+                    "Name": "data_Y"
+                }, 
+                {
+                    "Description": "The X data array as the basis for the regression.", 
+                    "Name": "data_X"
+                }, 
+                {
+                    "Description": "The array of X data for recalculating the values.", 
+                    "Name": "new data_X"
+                }, 
+                {
+                    "Description": "If type = 0 the linears will be calculated through the zero point, or else moved linears.", 
+                    "Name": "Linear_type"
+                }
+            ]
+        }, 
+        "TRIM": {
+            "Description": "Removes extra spaces from text.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which extra spaces between words are to be deleted.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "TRIMMEAN": {
+            "Description": "Returns the mean of a sample without including the marginal values.", 
+            "Parameters": [
+                {
+                    "Description": "The array of the data in the sample.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The percentage of marginal data that is not to be taken into account.", 
+                    "Name": "Alpha"
+                }
+            ]
+        }, 
+        "TRUE": {
+            "Description": "Returns the logical value TRUE.", 
+            "Parameters": []
+        }, 
+        "TRUNC": {
+            "Description": "Truncates the decimal places of a number.", 
+            "Parameters": [
+                {
+                    "Description": "The number to be truncated.", 
+                    "Name": "number"
+                }, 
+                {
+                    "Description": "The number of places after the decimal point that are not to be truncated.", 
+                    "Name": "count"
+                }
+            ]
+        }, 
+        "TTEST": {
+            "Description": "Calculates the T test.", 
+            "Parameters": [
+                {
+                    "Description": "The first record array.", 
+                    "Name": "data_1"
+                }, 
+                {
+                    "Description": "The second record array.", 
+                    "Name": "data_2"
+                }, 
+                {
+                    "Description": "Mode specifies the number of distribution tails to return. 1= one-tailed, 2 = two-tailed distribution", 
+                    "Name": "mode"
+                }, 
+                {
+                    "Description": "The type of the T test.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "TYPE": {
+            "Description": "Returns the data type of a value (1 = number, 2 = text, 4 = Boolean value, 8 = formula, 16 = error value, 64 = array).", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the data type is to be determined.", 
+                    "Name": "value"
+                }
+            ]
+        }, 
+        "UNICHAR": {
+            "Description": "Converts a code number into a Unicode character or letter.", 
+            "Parameters": [
+                {
+                    "Description": "The code value for the character.", 
+                    "Name": "number"
+                }
+            ]
+        }, 
+        "UNICODE": {
+            "Description": "Returns the numeric code for the first Unicode character in a text string.", 
+            "Parameters": [
+                {
+                    "Description": "This is the text for which the code of the first character is to be found.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "UPPER": {
+            "Description": "Converts text to uppercase.", 
+            "Parameters": [
+                {
+                    "Description": "The text in which lower case letters are to be converted to capitals.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "VALUE": {
+            "Description": "Converts text to a number.", 
+            "Parameters": [
+                {
+                    "Description": "The text to be converted to a number.", 
+                    "Name": "text"
+                }
+            ]
+        }, 
+        "VAR": {
+            "Description": "Calculates the variance based on a sample.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "VARA": {
+            "Description": "Returns the variance based on a sample. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2; ... are 1 to 30 arguments representing a sample taken from a basic total population.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "VARP": {
+            "Description": "Calculates variance based on the entire population.", 
+            "Parameters": [
+                {
+                    "Description": "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population.", 
+                    "Name": "number "
+                }
+            ]
+        }, 
+        "VARPA": {
+            "Description": "Returns the variance based on the entire population. Text is evaluated as zero.", 
+            "Parameters": [
+                {
+                    "Description": "Value 1; value 2;... are 1 to 30 arguments representing a population.", 
+                    "Name": "value "
+                }
+            ]
+        }, 
+        "VDB": {
+            "Description": "Variable declining balance. Returns the declining balance depreciation for a particular period.", 
+            "Parameters": [
+                {
+                    "Description": "Cost. The initial cost of the asset.", 
+                    "Name": "Cost"
+                }, 
+                {
+                    "Description": "Salvage. The salvage value of an asset at the end of its useful life.", 
+                    "Name": "Salvage"
+                }, 
+                {
+                    "Description": "Useful life. The number of periods in the useful life of the asset.", 
+                    "Name": "Life"
+                }, 
+                {
+                    "Description": "Start. The first period for depreciation in the same time unit as the useful life.", 
+                    "Name": "S"
+                }, 
+                {
+                    "Description": "End. The last period of the depreciation using the same time unit as for the useful life.", 
+                    "Name": "end"
+                }, 
+                {
+                    "Description": "Factor. The factor for the reduction of the depreciation. F = 2 denotes double rate depreciation.", 
+                    "Name": "Factor"
+                }, 
+                {
+                    "Description": "Do not alter. Type = 1 denotes switch to linear depreciation, type = 0 do not switch.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "VLOOKUP": {
+            "Description": "Vertical search and reference to indicated cells.", 
+            "Parameters": [
+                {
+                    "Description": "The value to be found in the first column.", 
+                    "Name": "Search criterion"
+                }, 
+                {
+                    "Description": "The array or range for referencing.", 
+                    "Name": "array"
+                }, 
+                {
+                    "Description": "Column index number in the array.", 
+                    "Name": "Index"
+                }, 
+                {
+                    "Description": "If the value is TRUE or not given, the search column of the array must be sorted in ascending order.", 
+                    "Name": "sort order"
+                }
+            ]
+        }, 
+        "WEEKDAY": {
+            "Description": "Returns the day of the week for the date value as an integer (1-7).", 
+            "Parameters": [
+                {
+                    "Description": "The internal number for the date.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "Fixes the beginning of the week and the type of calculation to be used.", 
+                    "Name": "Type"
+                }
+            ]
+        }, 
+        "WEIBULL": {
+            "Description": "Returns the values of the Weibull distribution.", 
+            "Parameters": [
+                {
+                    "Description": "The value for which the Weibull distribution is to be calculated.", 
+                    "Name": "Number"
+                }, 
+                {
+                    "Description": "The Alpha parameter of the Weibull distribution.", 
+                    "Name": "Alpha"
+                }, 
+                {
+                    "Description": "The Beta parameter of the Weibull distribution.", 
+                    "Name": "beta"
+                }, 
+                {
+                    "Description": "Cumulated. C=0 calculates the density function, C=1 the distribution.", 
+                    "Name": "C"
+                }
+            ]
+        }, 
+        "XOR": {
+            "Description": "Returns TRUE if exactly one of the arguments is TRUE.", 
+            "Parameters": [
+                {
+                    "Description": "Logical value 1, logical value 2,... are 1 to 30 conditions to be tested and which return either TRUE or FALSE.", 
+                    "Name": "Logical value "
+                }
+            ]
+        }, 
+        "YEAR": {
+            "Description": "Returns the year of a date value as an integer.", 
+            "Parameters": [
+                {
+                    "Description": "Internal number of the date.", 
+                    "Name": "Number"
+                }
+            ]
+        }, 
+        "ZGZ": {
+            "Description": "Interest. Calculates the interest rate which represents the rate of return from an investment.", 
+            "Parameters": [
+                {
+                    "Description": "The number of periods used in the calculation.", 
+                    "Name": "P"
+                }, 
+                {
+                    "Description": "Present value. The current value of the investment.", 
+                    "Name": "pv"
+                }, 
+                {
+                    "Description": "The future value of the investment.", 
+                    "Name": "FV"
+                }
+            ]
+        }, 
+        "ZTEST": {
+            "Description": "Calculates the probability of observing a z-statistic greater than the one computed based on a sample.", 
+            "Parameters": [
+                {
+                    "Description": "The given sample, drawn from a normally distributed population.", 
+                    "Name": "data"
+                }, 
+                {
+                    "Description": "The known mean of the population.", 
+                    "Name": "mu"
+                }, 
+                {
+                    "Description": "The known standard deviation of the population. If omitted, the standard deviation of the given sample is used.", 
+                    "Name": "sigma"
+                }
+            ]
+        }
+    }
+]
