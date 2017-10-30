@@ -8,6 +8,10 @@ Currently the documentation included is generated from the Apache OpenOffice.org
 
 The documentation is published in this project as `openoffice-function-docs.json`
 
+This project is installable using [yarn](https://yarnpkg.com/) from the repository, for example:
+
+* `yarn install https://github.com/j5int/spreadsheet-function-docs#v0.1.0`
+
 Generating the docs
 -------------------
 
