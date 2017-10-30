@@ -15,7 +15,7 @@ SRC_FILES = {
 }
 
 GIT_HASHES = {
-    'openoffice': 'c014b5f2b55cff8d4b0c952d5c16d62ecde09ca1',
+    'openoffice': 'trunk',
 }
 
 RAW_PREFIX = {
@@ -42,8 +42,8 @@ def download_src_files():
             with open(local_filename, 'rb') as f:
                 files[filename] = f.read()
         else:
-            logging.info("Downloading %s", filename)
             url = SRC_URLS[SRC_NAME][filename]
+            logging.info("Downloading %s from %s", filename, url)
             r = requests.get(url)
             if r.status_code != 200:
                 raise ValueError("Got unexpected response %s (%s)" % (r.reason, r.status_code))
@@ -150,6 +150,7 @@ def generate_function_reference(parsed):
 if __name__ == '__main__':
     import logging
     logging.basicConfig(level=logging.INFO)
+    logging.getLogger('requests').setLevel(logging.WARNING)
     if not os.path.exists(CACHE_DIR):
         os.mkdir(CACHE_DIR)
     src_files = download_src_files()
