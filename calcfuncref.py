@@ -83,10 +83,11 @@ def parse_core_resource(src):
 
 def parse_scfuncs(src):
     """Parses OpenOffice scfuncs.src"""
-    RESOURCE_START = re.compile('^\tResource ([A-Z0-9_]*)\n\t{', re.MULTILINE)
-    RESOURCE_END = re.compile('^\t};', re.MULTILINE)
-    STRING_START = re.compile('^\t\tString ([0-9]*) // (.*)\n\t\t{', re.MULTILINE)
-    STRING_END = re.compile('^\t\t};', re.MULTILINE)
+    _I = {'i1': '(?:\t|    )', 'i2': '(?:\t\t|        )'} # for handling indents
+    RESOURCE_START = re.compile('^%(i1)sResource ([A-Z0-9_]*)\n%(i1)s{' % _I, re.MULTILINE)
+    RESOURCE_END = re.compile('^%(i1)s};' % _I, re.MULTILINE)
+    STRING_START = re.compile('^%(i2)sString ([0-9]*) // (.*)\n%(i2)s{' % _I, re.MULTILINE)
+    STRING_END = re.compile('^%(i2)s};' % _I, re.MULTILINE)
     TEXT_STR = re.compile(r'^\s*Text\s*\[\s*([a-zA-Z0-9_-]*)\s*\]\s*=\s*"([^"]*)"\s*;', re.MULTILINE)
     # remove blocks that we don't need
     src = BLOCK_COMMENT.sub('', src)
