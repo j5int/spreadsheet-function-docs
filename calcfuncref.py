@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 
+import json
 import logging
 import os
 import requests
 import re
 
 SRC_NAME = 'openoffice'
+
+TARGET_FILE = '%s-function-reference.json' % SRC_NAME
+
 SRC_FILES = {
     'openoffice': ['scfuncs.src', 'core_resource.src'],
 }
@@ -150,3 +154,7 @@ if __name__ == '__main__':
     src_files = download_src_files()
     parsed_files = parse_src_files(src_files)
     function_reference = generate_function_reference(parsed_files)
+    target_filename = os.path.join(SCRIPTS_DIR, TARGET_FILE)
+    logging.info("Saving function reference to %s", target_filename)
+    with open(target_filename, 'wb') as f:
+        json.dump(function_reference, f, indent=4)
