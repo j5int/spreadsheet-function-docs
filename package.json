@@ -1,0 +1,9 @@
+{
+  "name": "spreadsheet-function-docs",
+  "version": "0.1.0",
+  "description": "Provides documentation for spreadsheet functions and parameters in a JSON structure",
+  "license": "Apache-2.0",
+  "repository": "github:j5int/spreadsheet-function-docs",
+  "files": ["openoffice-function-docs.json", "README.md", "LICENSE.md"],
+  "keywords": ["spreadsheet", "function", "documentation"]
+}
