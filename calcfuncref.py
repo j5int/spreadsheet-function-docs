@@ -49,18 +49,42 @@ def download_src_files():
     return files
 
 BLOCK_COMMENT = re.compile('/[*].*[*]/', re.DOTALL)
-RESOURCE_START = re.compile('^\tResource ([A-Z0-9_]*)\n\t{', re.MULTILINE)
-RESOURCE_END = re.compile('^\t};', re.MULTILINE)
-STRING_START = re.compile('^\t\tString ([0-9]*) // (.*)\n\t\t{', re.MULTILINE)
-STRING_END = re.compile('^\t\t};', re.MULTILINE)
-TEXT_STR = re.compile(r'^\s*Text\s*\[\s*([a-zA-Z0-9_-]*)\s*\]\s*=\s*"([^"]*)"\s*;', re.MULTILINE)
 
 def parse_src_files(src_files):
-    scfuncs_parsed = parse_scfuncs(src_files['scfuncs.src'])
-    return scfuncs_parsed
+    parsed = {}
+    parsed['scfuncs'] = parse_scfuncs(src_files['scfuncs.src'])
+    parsed['core_resource'] = parse_core_resource(src_files['core_resource.src'])
+    return parsed
+
+def parse_core_resource(src):
+    """Parses OpenOffice core_resource.src"""
+    RESOURCE_START = re.compile('^Resource ([A-Z0-9_]*)\n{', re.MULTILINE)
+    RESOURCE_END = re.compile('^};', re.MULTILINE)
+    TEXT_STR = re.compile(r'^\s*String\s+([A-Z0-9_]+)\s*{\s*Text\s*(\[\s*([a-zA-Z0-9_-]*)\s*\])?\s*=\s*"([^"]*)"\s*;\s*};', re.MULTILINE)
+    resources = {}
+    for resource_start in RESOURCE_START.finditer(src):
+        resource_name = resource_start.group(1)
+        resources[resource_name] = resource = []
+        resource_end = RESOURCE_END.search(src, resource_start.start())
+        if not resource_end:
+            continue
+        resource_str = src[resource_start.end():resource_end.start()]
+        for text_str in TEXT_STR.finditer(resource_str):
+            string_name = text_str.group(1)
+            text_lang = text_str.group(3)
+            text = text_str.group(4)
+            resource.append((resource_name, string_name, text_lang, text))
+    return resources
+
 
 def parse_scfuncs(src):
     """Parses OpenOffice scfuncs.src"""
+    RESOURCE_START = re.compile('^\tResource ([A-Z0-9_]*)\n\t{', re.MULTILINE)
+    RESOURCE_END = re.compile('^\t};', re.MULTILINE)
+    STRING_START = re.compile('^\t\tString ([0-9]*) // (.*)\n\t\t{', re.MULTILINE)
+    STRING_END = re.compile('^\t\t};', re.MULTILINE)
+    TEXT_STR = re.compile(r'^\s*Text\s*\[\s*([a-zA-Z0-9_-]*)\s*\]\s*=\s*"([^"]*)"\s*;', re.MULTILINE)
+    # remove blocks that we don't need
     src = BLOCK_COMMENT.sub('', src)
     src = src.replace('Resource RID_SC_FUNCTION_DESCRIPTIONS1\n{', '')
     src = src.replace('};\n\nResource RID_SC_FUNCTION_DESCRIPTIONS2\n{', '')
@@ -90,10 +114,39 @@ def parse_scfuncs(src):
     return resources
 
 
+def generate_function_reference(parsed):
+    PARAMETER_DESC = re.compile('(.*) of Parameter ([0-9]*)')
+    core_parsed = parsed['core_resource']
+    name_lookup = {}
+    for _, string_const, _, func_name in core_parsed['RID_STRLIST_FUNCTION_NAMES_ENGLISH_ODFF']:
+        name_lookup[string_const] = func_name
+    scfuncs_parsed = parsed['scfuncs']
+    function_defs = {}
+    for resource_id, resource_def in sorted(scfuncs_parsed.items()):
+        func_name = name_lookup.get(resource_id, None)
+        if not func_name:
+            continue
+        function_defs[func_name] = function_def = {}
+        param_lookup = {}
+        for _, _, string_description, _, text in resource_def:
+            param_info = PARAMETER_DESC.match(string_description)
+            if param_info:
+                param_number = int(param_info.group(2))
+                string_description = param_info.group(1)
+                param_lookup.setdefault(param_number-1, {})[string_description] = text
+            else:
+                function_def[string_description] = text
+        num_params = max([-1] + param_lookup.keys())
+        function_def['Parameters'] = [param_lookup.get(param_number, {}) for param_number in range(0, num_params+1)]
+    return function_defs
+
+
+
 if __name__ == '__main__':
     import logging
     logging.basicConfig(level=logging.INFO)
     if not os.path.exists(CACHE_DIR):
         os.mkdir(CACHE_DIR)
     src_files = download_src_files()
-    print parse_src_files(src_files)
+    parsed_files = parse_src_files(src_files)
+    function_reference = generate_function_reference(parsed_files)
