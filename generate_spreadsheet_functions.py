@@ -31,6 +31,7 @@ SRC_URLS = {
     },
 }
 
+
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(SCRIPTS_DIR, '_cache')
 
@@ -57,12 +58,14 @@ def download_src_files():
 
 BLOCK_COMMENT = re.compile('/[*].*[*]/', re.DOTALL)
 
+
 def parse_src_files(src_files):
     """Parses all source files defined"""
     parsed = {}
     parsed['scfuncs'] = parse_scfuncs(src_files['scfuncs.src'])
     parsed['core_resource'] = parse_core_resource(src_files['core_resource.src'])
     return parsed
+
 
 def parse_core_resource(src):
     """Parses OpenOffice core_resource.src"""
@@ -149,7 +152,6 @@ def generate_function_reference(parsed):
         num_params = max([-1] + param_lookup.keys())
         function_def['Parameters'] = [param_lookup.get(param_number, {}) for param_number in range(0, num_params+1)]
     return function_defs
-
 
 
 if __name__ == '__main__':
