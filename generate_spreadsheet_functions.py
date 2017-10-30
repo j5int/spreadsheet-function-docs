@@ -2,6 +2,13 @@
 
 """This is a utility that downloads source code and produces a JSON file with the documentation for spreadsheet functions from that source code"""
 
+# The copyright holders licenses this file to you under the Apache License, Version 2.0 (the \"License\");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License in this directory at LICENSE.md or at http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and limitations under the License.
+
 import json
 import logging
 import os
@@ -56,7 +63,8 @@ def download_src_files():
                 f.write(src)
     return files
 
-BLOCK_COMMENT = re.compile('/[*].*[*]/', re.DOTALL)
+BLOCK_COMMENT_START = re.compile('/[*]')
+BLOCK_COMMENT_END = re.compile('[*]/')
 
 
 def parse_src_files(src_files):
@@ -97,14 +105,23 @@ def parse_scfuncs(src):
     STRING_END = re.compile('^%(i2)s};' % _I, re.MULTILINE)
     TEXT_STR = re.compile(r'^\s*Text\s*\[\s*([a-zA-Z0-9_-]*)\s*\]\s*=\s*"([^"]*)"\s*;', re.MULTILINE)
     # remove blocks that we don't need
-    src = BLOCK_COMMENT.sub('', src)
+    result = {}
+    block_comments = []
+    for block_comment_start in BLOCK_COMMENT_START.finditer(src):
+        block_comment_end = BLOCK_COMMENT_END.search(src, block_comment_start.start())
+        block_comment_text = src[block_comment_start.start():block_comment_end.end()]
+        block_comments.append(block_comment_text)
+    for block_comment in block_comments:
+        if "License" in block_comment:
+           result['license'] = block_comment.strip().strip('/').strip('*').replace('\n * ', '\n').replace('\n', ' ').strip()
+        src = src.replace(block_comment, '')
     src = src.replace('Resource RID_SC_FUNCTION_DESCRIPTIONS1\n{', '')
     src = src.replace('};\n\nResource RID_SC_FUNCTION_DESCRIPTIONS2\n{', '')
     src = src.replace('#if defined(U2S)\n#undef U2S\n#endif', '')
     src = src.rstrip()
     if src.endswith('};'):
         src = src[:src.rfind('};')].rstrip()
-    resources = {}
+    result['resources'] = resources = {}
     for resource_start in RESOURCE_START.finditer(src):
         resource_name = resource_start.group(1)
         resources[resource_name] = resource = []
@@ -123,7 +140,7 @@ def parse_scfuncs(src):
                 text_lang = text_str.group(1)
                 text = text_str.group(2)
                 resource.append((resource_name, string_name, string_description, text_lang, text))
-    return resources
+    return result
 
 
 def generate_function_reference(parsed):
@@ -135,7 +152,7 @@ def generate_function_reference(parsed):
         name_lookup[string_const] = func_name
     scfuncs_parsed = parsed['scfuncs']
     function_defs = {}
-    for resource_id, resource_def in sorted(scfuncs_parsed.items()):
+    for resource_id, resource_def in sorted(scfuncs_parsed['resources'].items()):
         func_name = name_lookup.get(resource_id, None)
         if not func_name:
             continue
@@ -151,7 +168,7 @@ def generate_function_reference(parsed):
                 function_def[string_description] = text
         num_params = max([-1] + param_lookup.keys())
         function_def['Parameters'] = [param_lookup.get(param_number, {}) for param_number in range(0, num_params+1)]
-    return function_defs
+    return [scfuncs_parsed['license'], function_defs]
 
 
 if __name__ == '__main__':
